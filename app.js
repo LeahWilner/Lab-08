@@ -25,28 +25,29 @@ function guessANumber(){
 
 
 
-function getUserTime(){
-  let message;
-  let time = prompt('what hour is it? In Military time.');
-  if(time <= 11){
-    message = 'Good Morning';
-  }else if(time >= 12 && time <= 18){
-    message = 'Good Afternoon';
-  } else if(time > 18 && time < 24) {
-    message = 'Good Evening';
-  } else {
-    message = 'hello, I dont know your time.';
-  }
-  return message;
-}
+// function getUserTime(){
+//   let message;
+//   let time = parseInt(prompt('Give me your time please'));
+//   console.log('I need a number'. typeof(time))
+//   if(time <= 11){
+//     message = 'Good Morning';
+//   }else if(time >= 12 && time <= 18){
+//     message = 'Good Afternoon';
+//   } else if(time > 18 && time < 24) {
+//     message = 'Good Evening';
+//   } else {
+//     message = 'hello, I dont know your time.';
+//   }
+//   return document.write(message);
+// }
 
 
 function displayRating() {
   let output = '';
-  let rating = prompt('scale of 1-5, how many stars?');
+  let rating = prompt('scale of 1-5, how many cats?');
   //for loop
   for(let i = 0; i < rating; i++){
-    output += '<img  src=\'images/CRAIG-B.png\'  />';
+    output += '<img src=\"images/cutecat.jpg\"/>';
   }
   return document.write(output);
 }
@@ -54,6 +55,6 @@ function displayRating() {
 
 
 guessANumber();
-getUserName();
-getUserTime();
+// getUserName();
+// getUserTime();
 displayRating();
